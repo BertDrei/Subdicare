@@ -1,0 +1,16 @@
+/* Ensure content starts below the fixed navbar */
+/* Ensure the html and body take full height */
+
+.moderator-content {
+    background: linear-gradient(to bottom left, #e8e5e3, #B3EBF2); /* Gradient background */
+    padding-top: 60px ;
+    
+    color: #000000; /* Text color */
+    height: 100%; /* Subtract navbar height from the total viewport height */
+    min-height: 100vh;
+  }
+  
+  
+  
+  
+      

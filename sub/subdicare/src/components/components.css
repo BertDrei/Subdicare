@@ -1,0 +1,89 @@
+/* Full-width Navbar */
+.custom-navbar {
+  background-color: #343a40; /* Dark background */
+  width: 100%;
+  position: fixed; /* Sticks to the top of the page */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures it stays on top */
+  display: row; /* Flexbox for layout */
+  justify-content: space-between; /* Distribute the sections */
+  align-items: center; /* Vertically center all items */
+  padding: 0 20px; /* Padding to avoid edge-to-edge */
+  box-sizing: border-box; /* Ensure consistent padding and width */
+}
+
+/* SubdiCare Brand (Left Aligned) */
+.navbar-left {
+  flex: 1; /* Take up one portion of the space */
+  display: flex;
+  margin-top: 10px;
+
+}
+
+.subdicare-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navigation Links (Centered) */
+.navbar-center {
+  flex: 2; /* Take up more space in the center */
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px; /* Add space between links */
+}
+
+.navbar-links .nav-link {
+  font-size: 1.2rem;
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links .nav-link:hover {
+  color: #fff;
+}
+
+/* Logout (Right Aligned) */
+.navbar-right {
+  flex: 1; /* Take up one portion of the space */
+  display: flex;
+  justify-content: flex-end; /* Push logout to the far right */
+  padding-bottom: 10px;
+}
+
+.logout-link {
+  font-size: 1.2rem;
+  color: #f5a623;
+  text-decoration: none;
+
+}
+
+.logout-link:hover {
+  color: #ffcc80;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .custom-navbar {
+    flex-direction: column;
+    align-items: stretch; /* Align items to fill the width */
+  }
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    flex: none; /* Prevent flex growth */
+    text-align: center; /* Center align all items */
+    margin-bottom: 10px; /* Add spacing */
+  }
+  .navbar-links {
+    gap: 15px; /* Reduce gap for mobile */
+  }
+}

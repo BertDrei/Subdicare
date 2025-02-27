@@ -1,0 +1,43 @@
+.home-content {
+    background: linear-gradient(to bottom left, #e8e5e3, #B3EBF2); /* Gradient background */
+    padding-top: 40px;
+    color: #000000; /* Text color */
+    height:100vh; /* Subtract navbar height from the total viewport height */
+  }
+  
+  
+  /* home page css */
+  .home-page {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .carousel-container {
+    height: 94.5vh; /* Full height of the viewport */
+    overflow: hidden; /* Hide any overflow */
+  }
+  
+  .carousel-item img {
+    height: 94.5vh; /* Make images cover the full viewport height */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+  }
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+  
+
+  /** this ends home.jsx css **/
+  
